@@ -8,7 +8,7 @@ import { Component, OnInit, Input} from '@angular/core';
 export class GnbaseComponent implements OnInit {
 
   constructor() { }
-  @Input() base?:number;
+  @Input() base!:number;
   ngOnInit(): void {
   }
 

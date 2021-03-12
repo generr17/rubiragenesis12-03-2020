@@ -8,8 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class GnexponenteComponent implements OnInit {
 
   constructor() { }
-   exponente?:number;
-@Input() basenumero?:number;
+  @Input() basenumero!:number;
+   exponente!:number;
+
   ngOnInit(): void {
   }
 
