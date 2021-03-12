@@ -8,11 +8,13 @@ import { Component, Input, OnInit} from '@angular/core';
 export class GnresultadoComponent implements OnInit {
 
   constructor() { }
-  @Input()  numBase:number=0;
-  @Input() numExponente:number=0;
+  @Input() numBase:number=0;
+  @Input() numExponente!:number;
   result!:number;
   acumulador:number=0;
   calcular(){
+    this.numBase=Math.abs(this.numBase);
+    this.numExponente=Math.abs(this.numExponente);
     let contador:number=0;
   let resultado=1;
     do{
