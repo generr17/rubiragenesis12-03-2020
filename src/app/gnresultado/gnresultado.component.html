@@ -1,3 +1,7 @@
 <br>
-<button></button>
-<label>Potencia= </label><input type="text" [placeholder]="{}">
+<h1>{{numBase}}</h1>
+<h1>{{numExponente}}</h1>
+<label>Potencia= </label><input type="text" [placeholder]="result">
+<button (click)="calcular()">Aceptar</button>
+
+<app-gnacumulador [suma]="acumulador"></app-gnacumulador>

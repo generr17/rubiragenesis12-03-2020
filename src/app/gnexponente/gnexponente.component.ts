@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-gnexponente',
@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class GnexponenteComponent implements OnInit {
 
   constructor() { }
-  exponente?:number;
+   exponente?:number;
+@Input() basenumero?:number;
   ngOnInit(): void {
   }
 
